@@ -5,11 +5,11 @@ public class Transaksi {
     double finalSaldo;
     String tanggalTransaksi;
     String type;
-    bank bankAcc;
+    Bank bankAcc;
 
     Transaksi(){}
 
-    Transaksi(String kodeTransaksi, double saldo, double inOutSaldo, double finalSaldo, String tanggalTransaksi, String type, bank bankAcc) {
+    Transaksi(String kodeTransaksi, double saldo, double inOutSaldo, double finalSaldo, String tanggalTransaksi, String type, Bank bankAcc) {
         this.kodeTransaksi = kodeTransaksi;
         this.saldo=saldo;
         this.inOutSaldo=inOutSaldo;
