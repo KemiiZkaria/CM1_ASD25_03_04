@@ -19,7 +19,7 @@ public class Transaksi {
         this.bankAcc=bankAcc;
     }
     void tampilDataTransaksi(){
-        System.out.printf("%-25s %-20s %-15.2f %-15.2f %-15.2f %-15s %-15s\n",
+        System.out.printf("%-25s %-20s %-15.2f %-15.2f %-15.2f %-15s %-20s\n",
         kodeTransaksi,
         bankAcc.noRekening,
         saldo,
