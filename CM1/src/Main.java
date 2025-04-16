@@ -14,11 +14,11 @@ public class Main {
         arrBank[4] = new Bank("1625634 1344", "Gery", "Fatimah", "0859-3123-7727", "gery@gmail.com");
 
         Transaksi[] arrTransaksi = new Transaksi[5];
-        arrTransaksi[0] = new Transaksi("Tr005", 500000, 200000, 700000, "23-04-2025", "Kredit");
-        arrTransaksi[1] = new Transaksi("Tr004", 400000, 150000, 650000, "23-04-2025", "Kredit");
-        arrTransaksi[2] = new Transaksi("Tr003", 300000, 100000, 200000, "23-04-2025", "Debit");
-        arrTransaksi[3] = new Transaksi("Tr002", 200000, 200000, 400000, "23-04-2025", "Kredit");
-        arrTransaksi[4] = new Transaksi("Tr001", 100000, 50000, 50000, "23-04-2025", "Debit");
+        arrTransaksi[0] = new Transaksi("Tr005", 500000, 200000, 700000, "23-04-2025", "Kredit",arrBank[0]);
+        arrTransaksi[1] = new Transaksi("Tr004", 400000, 150000, 650000, "23-04-2025", "Kredit",arrBank[1]);
+        arrTransaksi[2] = new Transaksi("Tr003", 300000, 100000, 200000, "23-04-2025", "Debit",arrBank[2]);
+        arrTransaksi[3] = new Transaksi("Tr002", 200000, 200000, 400000, "23-04-2025", "Kredit",arrBank[3]);
+        arrTransaksi[4] = new Transaksi("Tr001", 100000, 50000, 50000, "23-04-2025", "Debit",arrBank[4]);
 
         for (int i = 0; i < arrBank.length; i++) {
             list.tambah(arrTransaksi[i]);
