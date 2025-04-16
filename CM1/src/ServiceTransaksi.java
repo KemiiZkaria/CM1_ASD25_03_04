@@ -16,7 +16,7 @@ public class ServiceTransaksi {
         }
     }
     void TampilTransaksi(Transaksi[] arrTransaksi){
-        System.out.printf("%-25s %-20s %-15s %-15s %-15s %-15s %-20s\n", "Kode transaksaksi","No Rekening","Soldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
+        System.out.printf("%-25s %-20s %-15s %-15s %-15s %-15s %-20s\n", "Kode transaksaksi","No Rekening","Saldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
         for (int i = 0; i < arrTransaksi.length; i++) {
             arrTransaksi[i].tampilDataTransaksi();;
         }
@@ -38,17 +38,19 @@ public class ServiceTransaksi {
                 min=trs[i];
             }
         }
+        System.out.printf("%-25s %-20s %-15s %-15s %-15s %-15s %-20s\n", "Kode transaksaksi","No Rekening","Saldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
         min.tampilDataTransaksi();
     }
     void sorting(Bank[] arrBank){
         for (int i = 0; i < trs.length-1; i++) {
             for (int j = 1; j < trs.length-i; j++){
-                if (arrBank[j].noRekening.compareToIgnoreCase(arrBank[j-1].noRekening)>0){
+                if (arrBank[j].noRekening.compareToIgnoreCase(arrBank[j-1].noRekening)<0){
                     Bank temp=arrBank[j];
                     arrBank[j]=arrBank[j-1];
                     arrBank[j-1]=temp;
                 }
             }
         }
+        TampilData(arrBank);
     }
 }
