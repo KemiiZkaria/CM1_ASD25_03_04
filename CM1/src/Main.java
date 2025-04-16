@@ -41,16 +41,19 @@ public class Main {
                     list.TampilData(arrBank);
                     break;
                 case 2:
-                    
+                    list.TampilTransaksi(arrTransaksi);
                     break;
                 case 3:
-                    
+                    System.out.print("Masukkan Kode transaksi: ");
+                    String key = sc.nextLine();
+                    list.Searching(key);
                     break;
                 case 4:
+                    list.minFinalsaldo();
                     
                     break;
                 case 5:
-                    
+                    list.sorting(arrBank);
                     break;
                 case 6:
                     System.out.println("Program dihentikan");
