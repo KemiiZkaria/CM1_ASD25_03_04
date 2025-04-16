@@ -9,22 +9,27 @@ public class ServiceTransaksi {
         trs[idx++]=t;
     }
     void TampilData(Bank[] arrBank){
+        System.out.printf("");
         for (int i = 0; i < arrBank.length; i++) {
             arrBank[i].tampiDataNorek();
         }
     }
     void TampilTransaksi(Transaksi[] arrTransaksi){
+        System.out.printf("%-25s %-20s %-15s %-15s %-15s %-15s %-15s\n", "Kode transaksaksi","No Rekening","Soldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
         for (int i = 0; i < arrTransaksi.length; i++) {
-            System.out.printf("%-15s %-20s %-15s %-15s %-15s %-15s %-15s", "Kode transaksaksi","No Rekening","Soldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
+            arrTransaksi[i].tampilDataTransaksi();;
         }
     }
     void Searching(String key){
         for (int i = 0; i < trs.length; i++) {
             if(key==trs[i].kodeTransaksi){
                 trs[i].tampilDataTransaksi();
+                return;
             }
         }
+        System.out.println("Data tidak ditemukan");
     }
+
     void minFinalsaldo(){
         Transaksi min=trs[0];
         for (int i = 1; i < trs.length; i++) {

@@ -9,7 +9,7 @@ public class Transaksi {
 
     Transaksi(){}
 
-    Transaksi(String kodeTransaksi, double saldo, double inOutSaldo, double finalSaldo, String tanggalTransaksi, String type) {
+    Transaksi(String kodeTransaksi, double saldo, double inOutSaldo, double finalSaldo, String tanggalTransaksi, String type, Bank bankAcc) {
         this.kodeTransaksi = kodeTransaksi;
         this.saldo=saldo;
         this.inOutSaldo=inOutSaldo;
@@ -19,11 +19,6 @@ public class Transaksi {
         this.bankAcc=bankAcc;
     }
     void tampilDataTransaksi(){
-        System.out.println("Kode Transaksi : "+kodeTransaksi);
-        System.out.println("saldo: "+saldo);
-        System.out.println("inOutSaldo: "+inOutSaldo);
-        System.out.println("Final saldo: "+finalSaldo);
-        System.out.println("Tanggal Transaksi: "+tanggalTransaksi);
-        System.out.println("Type: "+type);
+        System.out.printf("%-25s %-20s %-15s %-15f %-15f %-15f %-15s %-15s\n", kodeTransaksi,bankAcc.noRekening,saldo,inOutSaldo,finalSaldo,tanggalTransaksi,type);
     }
 }
