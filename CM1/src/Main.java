@@ -21,7 +21,7 @@ public class Main {
         arrTransaksi[4] = new Transaksi("Tr001", 100000, 50000, 50000, "23-04-2025", "Debit");
 
         for (int i = 0; i < arrBank.length; i++) {
-            list.TampilData(arrTransaksi[i]);
+            list.tambah(arrTransaksi[i]);
         }
 
         while (true) {
