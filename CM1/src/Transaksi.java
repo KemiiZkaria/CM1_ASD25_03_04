@@ -9,7 +9,7 @@ public class Transaksi {
 
     Transaksi(){}
 
-    Transaksi(String kodeTransaksi, double saldo, double inOutSaldo, double finalSaldo, String tanggalTransaksi, String type, Bank bankAcc) {
+    Transaksi(String kodeTransaksi, double saldo, double inOutSaldo, double finalSaldo, String tanggalTransaksi, String type) {
         this.kodeTransaksi = kodeTransaksi;
         this.saldo=saldo;
         this.inOutSaldo=inOutSaldo;
