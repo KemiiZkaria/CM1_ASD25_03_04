@@ -38,8 +38,7 @@ public class ServiceTransaksi {
                 min=trs[i];
             }
         }
-        System.out.printf("%-25s %-20s %-15s %-15s %-15s %-15s %-20s\n", "Kode transaksaksi","No Rekening","Saldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
-        min.tampilDataTransaksi();
+        min.tampiltransaksi();
     }
     void sorting(Bank[] arrBank){
         for (int i = 0; i < trs.length-1; i++) {
