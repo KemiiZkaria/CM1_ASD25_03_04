@@ -1,4 +1,5 @@
 public class Bank {
+
     String noRekening, nama, namaIbu, noHp, email;
     Bank(String norek, String nm, String nmIbu, String no, String eml){
         this.noRekening = noRekening;
