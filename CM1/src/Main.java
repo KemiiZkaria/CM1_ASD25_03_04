@@ -25,7 +25,7 @@ public class Main {
         }
 
         while (true) {
-            System.out.println("===== POLINEMA BANK =====");
+            System.out.println("\n===== POLINEMA BANK =====");
             System.out.println("Bank Menu: ");
             System.out.println("1. Data Norek");
             System.out.println("2. Data Transaksi");
@@ -50,6 +50,7 @@ public class Main {
                     list.Searching(key);
                     break;
                 case 4:
+                    System.out.println("Menampilkan nilai saldo terkecil");
                     list.minFinalsaldo();
                     break;
                 case 5:

@@ -19,12 +19,12 @@ public class Transaksi {
         this.bankAcc=bankAcc;
     }
     void tampilDataTransaksi(){
-        System.out.printf("%-25s %-20s %-15.2f %-15.2f %-15.2f %-15s %-20s\n",kodeTransaksi, bankAcc.noRekening, saldo, inOutSaldo, finalSaldo, tanggalTransaksi, type);
+        System.out.printf("%-20s %-18s %-15.2f %-15.2f %-15.2f %-15s %-24s\n",kodeTransaksi, bankAcc.noRekening, saldo, inOutSaldo, finalSaldo, tanggalTransaksi, type);
     }
     void tampiltransaksi(){
         System.out.println("Kode Transaksi      : "+kodeTransaksi);
-        System.out.println("Nama                :"+bankAcc.nama);
-        System.out.println("No Rekening         :"+bankAcc.noRekening);
+        System.out.println("Nama                : "+bankAcc.nama);
+        System.out.println("No Rekening         : "+bankAcc.noRekening);
         System.out.println("saldo               : "+saldo);
         System.out.println("inOutSaldo          : "+inOutSaldo);
         System.out.println("Final saldo         : "+finalSaldo);
