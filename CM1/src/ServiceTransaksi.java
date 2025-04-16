@@ -20,14 +20,15 @@ public class ServiceTransaksi {
         }
         min.tampilDataTransaksi();
     }
-    void sorting(){
+    void sorting(Bank[] arrBank){
         for (int i = 0; i < trs.length-1; i++) {
             for (int j = 1; j < trs.length-i; j++){
-                if (trs[j].noRekening < trs[j-1].noRekening){
-                    Transaksi temp=trs[j];
-                    trs[j]=trs[j-1];
-                    trs[j-1]=temp;
+                if (arrBank[j].noRekening.compareToIgnoreCase(arrBank[j-1].noRekening)>0){
+                    Bank temp=arrBank[j];
+                    arrBank[j]=arrBank[j-1];
+                    arrBank[j-1]=temp;
                 }
             }
+        }
     }
 }
