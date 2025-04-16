@@ -16,6 +16,7 @@ public class ServiceTransaksi {
     void TampilTransaksi(Transaksi[] arrTransaksi){
         for (int i = 0; i < arrTransaksi.length; i++) {
             System.out.printf("%-15s %-20s %-15s %-15s %-15s %-15s %-15s", "Kode transaksaksi","No Rekening","Soldo","Debit/Kredit","Final Saldo","Tanggal Transaksi","Type");
+        }
     }
     void Searching(String key){
         for (int i = 0; i < trs.length; i++) {
