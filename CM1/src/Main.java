@@ -30,7 +30,7 @@ public class Main {
             System.out.println("1. Data Norek");
             System.out.println("2. Data Transaksi");
             System.out.println("3. Search Data");
-            System.out.println("4. Display min/max Saldo");
+            System.out.println("4. Display min final Saldo");
             System.out.println("5. Sort Data");
             System.out.println("6. Exit");
 
