@@ -23,6 +23,8 @@ public class Transaksi {
     }
     void tampiltransaksi(){
         System.out.println("Kode Transaksi      : "+kodeTransaksi);
+        System.out.println("Nama                :"+bankAcc.nama);
+        System.out.println("No Rekening         :"+bankAcc.noRekening);
         System.out.println("saldo               : "+saldo);
         System.out.println("inOutSaldo          : "+inOutSaldo);
         System.out.println("Final saldo         : "+finalSaldo);

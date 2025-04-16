@@ -23,8 +23,9 @@ public class ServiceTransaksi {
     }
     void Searching(String key){
         for (int i = 0; i < trs.length; i++) {
-            if(key==trs[i].kodeTransaksi){
-                trs[i].tampilDataTransaksi();
+            if(key.equalsIgnoreCase(trs[i].kodeTransaksi)){
+                
+                trs[i].tampiltransaksi();
                 return;
             }
         }
