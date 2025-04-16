@@ -36,6 +36,7 @@ public class Main {
 
             System.out.print("Pilih menu: ");
             int pilih = sc.nextInt();
+            sc.nextLine();
             switch (pilih) {
                 case 1:
                     list.TampilData(arrBank);
@@ -50,7 +51,6 @@ public class Main {
                     break;
                 case 4:
                     list.minFinalsaldo();
-                    
                     break;
                 case 5:
                     list.sorting(arrBank);
