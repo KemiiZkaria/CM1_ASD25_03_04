@@ -2,7 +2,11 @@ public class ServiceTransaksi {
     Transaksi[] trs=new Transaksi[5];
     
     void ServiceTransaksi(int kapasitas){
-
+    }
+    void TampilData(Bank[] arrBank){
+        for (int i = 0; i < arrBank.length; i++) {
+            arrBank[i].tampiDataNorek();
+        }
     }
     void Searching(String key){
         for (int i = 0; i < trs.length; i++) {
