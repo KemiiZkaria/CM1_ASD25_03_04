@@ -9,9 +9,10 @@ public class ServiceTransaksi {
         trs[idx++]=t;
     }
     void TampilData(Bank[] arrBank){
-        System.out.printf("");
-        for (int i = 0; i < arrBank.length; i++) {
-            arrBank[i].tampiDataNorek();
+        System.out.printf("%-16s %-10s %-10s %-18s %-25s%n", "No Rekening", "Nama", "Nama Ibu", "No HP", "Email");
+        for (Bank bank : arrBank) {
+            System.out.printf("%-16s %-10s %-10s %-18s %-25s%n",
+                bank.noRekening, bank.nama, bank.namaIbu, bank.noHp, bank.email);
         }
     }
     void TampilTransaksi(Transaksi[] arrTransaksi){
